@@ -14,7 +14,7 @@ def configure_gemini(api_key):
     """Configure Gemini API with the provided key"""
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-pro-vision')
+        model = genai.GenerativeModel('gemini-1.5-flash')
         st.session_state.api_key_configured = True
         st.session_state.model = model
         return True
